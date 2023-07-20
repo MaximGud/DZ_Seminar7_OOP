@@ -6,11 +6,13 @@ public class CalcDecorator implements iCalculable {
   private iCalculable oldCalc;
   private Logger logger;
 
+  // конструктор нового класса Декоратор
   public CalcDecorator(iCalculable oldCalc, Logger logger) {
     this.oldCalc = oldCalc;
     this.logger = logger;
   }
 
+  // переписаны методы совместно с логированием
   @Override
   public List<Integer> sum(int arg1, int arg2, int arg3, int arg4) {
     List<Integer> res = new ArrayList<Integer>();

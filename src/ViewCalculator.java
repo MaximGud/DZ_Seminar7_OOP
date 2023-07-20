@@ -18,7 +18,7 @@ public class ViewCalculator {
     int argB = promptInt("Введите аргумент b первого комплексного числа: ");
     int argC = promptInt("Введите аргумент c второго комплексного числа: ");
     int argD = promptInt("Введите аргумент d второго комплексного числа: ");
-
+    // создаем новый список для отражения результата, т.к. на выходе два числа
     List<Integer> res = new ArrayList<Integer>();
     switch (cmd) {
 
@@ -38,6 +38,7 @@ public class ViewCalculator {
     }
   }
 
+  // метод получения строки с консоли
   private String prompt(String message) {
     Scanner in = new Scanner(System.in);
     System.out.print(message);
@@ -45,12 +46,14 @@ public class ViewCalculator {
 
   }
 
+  // метолд получения числа с консоли
   private int promptInt(String message) {
     Scanner in = new Scanner(System.in);
     System.out.print(message);
     return Integer.parseInt(in.nextLine());
   }
 
+  // метод вывода результата вычислений
   private void resultOutput(List<Integer> res) {
     System.out.println("Результат равен: " + res.get(0) + " + " + res.get(1) + "i");
   }

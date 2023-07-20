@@ -7,6 +7,8 @@ public final class Calculator implements iCalculable {
 
   }
 
+  // методы суммирования, деления, умножения комплексных чисел. принимают на вход
+  // 4 аргумента
   @Override
   public List<Integer> sum(int arg1, int arg2, int arg3, int arg4) {
     List<Integer> res = new ArrayList<Integer>();
